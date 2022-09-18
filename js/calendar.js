@@ -16,7 +16,11 @@ if(curWDay === 4) curWDay = 'Thursday'
 if(curWDay === 5) curWDay = 'Friday'
 if(curWDay === 6) curWDay = 'Saturday'
 let setWDay = document.getElementById("date-day");
+let cardplan = document.getElementById('cardinnertext') 
 
+fetch(`https://motivational-quote-api.herokuapp.com/quotes/random`)
+	.then(resp => resp.json())
+	.then(data => console.log(data.quote))
 
 document.getElementById('authorize_button').style.visibility = 'hidden';
 document.getElementById('signout_button').style.visibility = 'hidden';
@@ -113,4 +117,6 @@ async function listUpcomingEvents() {
     setWDay.innerText = curWDay;
     console.log(events[0].summary);
     console.log(events);
+    cardplan.innerText = 'Join Meeting'
+    cardplan.href = events[0].hangoutLink;
 }
