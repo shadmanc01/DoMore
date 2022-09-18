@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+    <div class="calendar">
+        <div class="timeline">
+          <div class="spacer"></div>
+          <div class="time-marker">9 AM</div>
+          <div class="time-marker">10 AM</div>
+          <div class="time-marker">11 AM</div>
+          <div class="time-marker">12 PM</div>
+          <div class="time-marker">1 PM</div>
+          <div class="time-marker">2 PM</div>
+          <div class="time-marker">3 PM</div>
+          <div class="time-marker">4 PM</div>
+          <div class="time-marker">5 PM</div>
+          <div class="time-marker">6 PM</div>
+        </div>
+        <div class="days">
+          <div class="day mon">
+            <div class="date">
+              <p class="date-num" id="date-num"></p>
+              <p class="date-day" id="date-day"></p>
+            </div>
+            <div class="events">
+              <div class="event start-2 end-5 securities">
+                <p class="title" id="eventsummary"></p>
+                <p class="time" id="time"></p>
+              </div>
+            </div>
+          </div>      
+          </div>
+        </div>
+      </div>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>
+    
