@@ -18,10 +18,6 @@ if(curWDay === 6) curWDay = 'Saturday'
 let setWDay = document.getElementById("date-day");
 let cardplan = document.getElementById('cardinnertext') 
 
-fetch(`https://motivational-quote-api.herokuapp.com/quotes/random`)
-	.then(resp => resp.json())
-	.then(data => console.log(data.quote))
-
 document.getElementById('authorize_button').style.visibility = 'hidden';
 document.getElementById('signout_button').style.visibility = 'hidden';
 

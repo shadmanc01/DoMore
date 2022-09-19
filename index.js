@@ -1,6 +1,9 @@
+//variables
+let zen = document.getElementById("zen");
+
 //Event
 window.addEventListener("DOMContentLoaded", () =>{
-    document.querySelector("p").addEventListener("click", fetchQuote)
+    zen.addEventListener("click", fetchQuote)
 })
 
 //Fetch Function
@@ -12,11 +15,11 @@ function fetchQuote(){
 
 //DOM Manipulation
 function addQuoteToDom(quote){
-    if(document.querySelector("p").innerText == placeHolder || document.querySelector("p").innerText == placeHolder2) {
-        document.querySelector("p").innerText = quote
+    if(zen.innerText == placeHolder || zen.innerText == placeHolder2) {
+        zen.innerText = quote
     }
     else {
-        document.querySelector("p").innerText = placeHolder2
+        zen.innerText = placeHolder2
     }
 }
 
