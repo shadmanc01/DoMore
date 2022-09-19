@@ -1,4 +1,4 @@
-//variables
+//letiables
 let zen = document.getElementById("zen");
 
 //Event
@@ -19,13 +19,13 @@ function addQuoteToDom(quote){
         zen.innerText = quote
     }
     else {
-        zen.innerText = placeHolder2
+        document.querySelector("p").innerText = placeHolder2
     }
 }
 
 const placeHolder = "Feeling Down?"
 const placeHolder2 = "Still Feeling Down?"
-
+//
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
@@ -65,8 +65,8 @@ function closeModal(modal) {
 
 // clock
     function updateClock(){
-      var now = new Date();
-      var dname = now.getDay(),
+      let now = new Date();
+      let dname = now.getDay(),
           mo = now.getMonth(),
           dnum = now.getDate(),
           yr = now.getFullYear(),
@@ -86,15 +86,15 @@ function closeModal(modal) {
           }
 
           Number.prototype.pad = function(digits){
-            for(var n = this.toString(); n.length < digits; n = 0 + n);
+            for(let n = this.toString(); n.length < digits; n = 0 + n);
             return n;
           }
 
-          var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
-          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
-          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
-          for(var i = 0; i < ids.length; i++)
+          let months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+          let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          let ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+          let values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+          for(let i = 0; i < ids.length; i++)
           document.getElementById(ids[i]).firstChild.nodeValue = values[i];
     }
 

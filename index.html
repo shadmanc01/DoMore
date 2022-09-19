@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="calendar.css">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="wrapper" onload="initClock()">
     <button id="authorize_button" onclick="handleAuthClick()">Authorize your account</button>
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
     <pre id="content" style="white-space: pre-wrap;"></pre>
@@ -56,21 +56,8 @@
 
 
 <!-- digital clock start -->
-<div class= "containerClock">
-<div class="datetime">
-<div class="date">
-  <span id="dayname">Day</span>,
-  <span id="month">Month</span>
-  <span id="daynum">00</span>,
-  <span id="year">Year</span>
-</div>
-<div class="time">
-  <span id="hour">00</span>:
-  <span id="minutes">00</span>:
-  <span id="seconds">00</span>
-  <span id="period">AM</span>
-</div>
-</div>
+<div id="clock">
+  <h1 id="date-time"></h1>
 </div>
 <!-- end clock -->
 
