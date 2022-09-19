@@ -19,7 +19,7 @@ function addQuoteToDom(quote){
         zen.innerText = quote
     }
     else {
-        zen.innerText = placeHolder2
+        document.querySelector("p").innerText = placeHolder2
     }
 }
 
