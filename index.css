@@ -109,7 +109,7 @@
 
 /*for smaller screens below 300px*/
 @media only screen and (max-width: 300px) {
-  body {font-size: 1.6rem;}
+  body {font-size: 1.6rem;} 
 }
 /* clock end */
 
@@ -151,7 +151,6 @@ a{
     position: relative;
     margin: 10px auto;
     text-align: center;
-    background-color: #0f72e5;
     color: #ffffff;
     text-decoration: none;
     padding: 5px 0;
@@ -298,5 +297,9 @@ a{
 }
 .letter-image:hover .shadow {
     width: 250px;
-}
+} 
 
+.zen {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
