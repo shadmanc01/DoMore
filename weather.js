@@ -1,5 +1,7 @@
 let weatherimg = document.getElementById('weathericon');
 let temp = document.getElementById('temperature');
+let forecast = document.getElementById('forecast')
+
 window.addEventListener('DOMContentLoaded', () => {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(position => {
@@ -10,10 +12,12 @@ window.addEventListener('DOMContentLoaded', () => {
 			.then(resp => resp.json())
 			.then(data =>  {
                 let kelvin = data.main.temp;
-                console.log("kel", kelvin)
+                let curforecast = data.weather[0].main.toLowerCase();
+                console.log(curforecast)
                 let fahr = Math.round((((kelvin - 273.15) * 9) / 5) + 32)
                 weathericon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
                 temp.innerText = fahr + '℉';
+                forecast.innerText = `Looks like ` + curforecast;
             })
 		});
 	}
