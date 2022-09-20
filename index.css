@@ -127,19 +127,6 @@
   body {font-size: 1.6rem;} 
 }
 
-/* .datetime{
-  color: #fff;
-  background: rgba(0,0,0,0.5);
-  font-family: "Segoe UI", sans-serif;
-  width: 340px;
-  padding: 15px 10px;
-  border: 3px solid #2E94E3;
-  border-radius: 5px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-  transition: 0.5s;
-  
-} */
-
 #clock:hover{
   background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
   background-size: 600%;
@@ -155,45 +142,7 @@
   letter-spacing: 3px;
 }
 
-.time{
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.time span:not(:last-child){
-  position: relative;
-  margin: 0 6px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 3px;
-}
-
-.containerClock{
-    position:absolute;
-    top:0px;
-    right:0px;
-}
-
-.clockTime{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #101e14;
-  }
- 
-  
-  .time span:last-child{
-    background: #eaa421;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-top: 10px;
-    padding: 0 5px;
-    border-radius: 3px;
-  }
 /* clock end */
 
 
