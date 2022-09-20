@@ -17,6 +17,7 @@ if(curWDay === 5) curWDay = 'Friday'
 if(curWDay === 6) curWDay = 'Saturday'
 let setWDay = document.getElementById("date-day");
 let cardplan = document.getElementById('cardinnertext') 
+let intromessage = document.getElementById('intromessage')
 
 document.getElementById('authorize_button').style.visibility = 'hidden';
 document.getElementById('signout_button').style.visibility = 'hidden';
@@ -115,4 +116,5 @@ async function listUpcomingEvents() {
     console.log(events);
     cardplan.innerText = 'Join Meeting'
     cardplan.href = events[0].hangoutLink;
+    intromessage.innerText = '';
 }

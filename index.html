@@ -8,25 +8,34 @@
     <link rel="stylesheet" href="calendar.css">
     <link rel="stylesheet" href="index.css">
 </head>
-<body class="wrapper" onload="initClock()">
-    <button id="authorize_button" onclick="handleAuthClick()">Authorize your account</button>
+<body class="wrapper" >
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
     <pre id="content" style="white-space: pre-wrap;"></pre>
   
       <div class="card card-4">
         <h1 class="date">
+            <p id="intromessage">Hey you, sync your calendar</p>
             <p class="date-num" id="date-num"></p>
             <p class="date-day" id="date-day"></p>
         </h1>
         <div class="card__icon"><i class="fas fa-bolt"></i></div>
         <p class="card__exit"><i class="fas fa-times"></i></p>
-        <h2 class="title" id="eventsummary">Hey you, sync your calendar</h2>
+        <h2 class="title" id="eventsummary"></h2>
           <p class="time" id="time"></p>
           <p class="card__apply">
-          <a id="cardinnertext"class="card__link" href="#">Are we inclined to do anything?<i class="fas fa-arrow-right"></i></a>
+          <a id="cardinnertext"class="card__link" href="#">
+            <button id="authorize_button" onclick="handleAuthClick()">Authorize your account</button>
+            <i class="fas fa-arrow-right"></i></a>
         </p>
       </div>
-
+      <div class="card card-5">
+        <div class="card__icon">
+          <img id= "weathericon"src="">
+        </div>
+        <h2 id="temperature"></h2>
+        <p class="card__apply">
+        </p>
+      </div>
 <!-- Ashé's Code -->
 <div class="popup">
   <button data-form-target="#form">
@@ -50,7 +59,7 @@
       </div>
     </button>
     
-  <a id="close" href="#">Skip</a>
+  <a id="close" href="#">Skip<i class="fas fa-arrow-right"></i></a>
 </div>
 
 
@@ -88,6 +97,7 @@
           position: fixed;
           bottom: 0;
           right: 0;
+          font-size: 20px;
         }
       </style>
     <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
