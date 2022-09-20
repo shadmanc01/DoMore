@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 let fahr = Math.round((((kelvin - 273.15) * 9) / 5) + 32)
                 weathericon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
                 temp.innerText = fahr + '℉';
-                forecast.innerText = `Looks like ` + curforecast;
+                forecast.innerText = `Today's Weather is: ` + curforecast;
             })
 		});
 	}
