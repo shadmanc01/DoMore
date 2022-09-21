@@ -41,6 +41,7 @@
         </p>
       </div>
   <!-- Ashé's Code -->
+  
   <section class="wrap" onload="initClock()">
     <div class="popup">
         <button data-form-target="#form">
@@ -81,6 +82,10 @@
   function show(format) {
     var time = new Date();
     var str = "";
+<<<<<<< HEAD
+=======
+
+>>>>>>> c4e5fc4c86879b6956ab1950d118e0e915eac578
     if (format === "New_York") {
         str += "New York " + time.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit" }) + "<br>";
         // str += "Paris " + time.toLocaleTimeString("en-US", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" }) + "<br>";
@@ -101,8 +106,15 @@
     //     str += "Paris " + time.toLocaleTimeString("en-US", { timeZone: "Europe/Paris", hour12: false, hour: "2-digit", minute: "2-digit" }) + "<br>";
     //     str += "Tokyo " + time.toLocaleTimeString("en-US", { timeZone: "Asia/Tokyo", hour12: false, hour: "2-digit", minute: "2-digit" });
     // }
+<<<<<<< HEAD
     document.getElementById("displayTime").innerHTML = str;
 }
+=======
+
+    document.getElementById("displayTime").innerHTML = str;
+}
+
+>>>>>>> c4e5fc4c86879b6956ab1950d118e0e915eac578
 window.onload = function() { show("New_York") };
 </script>
 <div id="thisTime">
@@ -115,6 +127,8 @@ window.onload = function() { show("New_York") };
 </p>
 <div id="displayTime"></div>
 </div>
+
+
 <!-- end clock -->
 <!-- Ashé's Code ends here -->
 <div class="zenMode">
