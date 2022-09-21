@@ -3,45 +3,35 @@
 *::before {
   box-sizing: border-box;
 }
-
 body,
 .wrapper {
-  background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
+  background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
   background-size: 600%;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-name: gradients;
 }
-
 @media (max-width: 830px) {}
-
 @keyframes gradients {
   0% {
     background-position: 0 0;
   }
-
   25% {
     background-position: 50% 0;
   }
-
   50% {
     background-position: 90% 0;
   }
-
   60% {
     background-position: 60%;
   }
-
   75% {
     background-position: 40%;
   }
-
   100% {
     background-position: 0 0;
   }
 }
-
-
 #overlay {
   position: fixed;
   opacity: 0;
@@ -53,16 +43,12 @@ body,
   background-color: rgba(0, 0, 0, .5);
   pointer-events: none;
 }
-
 #overlay.active {
   opacity: 1;
   pointer-events: all;
 }
-
-
 /* clock start ----------------->*/
-
-#clock {
+#thisTime {
   position: absolute;
   right: 0;
   top: 0;
@@ -80,76 +66,43 @@ body,
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
   transition: 0.5s;
 }
-
 /* for smaller screens below 700px */
 @media only screen and (max-width: 700px) {
   body {
     font-size: 1.8rem;
   }
 }
-
 /*for smaller screens below 300px*/
 @media only screen and (max-width: 300px) {
   body {
     font-size: 1.6rem;
   }
 }
-
-#clock:hover {
-  background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
+#thisTime:hover {
+  background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
   background-size: 600%;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-name: gradients;
 }
-
-#date-time {
+#displayTime {
   font-size: 15px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 3px;
 }
-
 /* clock end -----------------> */
-
-
 /* brain dump start ----------------->*/
-*, *::after, *::before {
+/* *, *::after, *::before {
     box-sizing: border-box;
-  }
-
- section,.wrapper {
-    background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
+  } */
+ /* section,.wrap {
+    background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
     background-size: 600%;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-name: gradients;
- }
-
-  @media (max-width: 830px) {
-   
- }
-  @keyframes gradients {
-    0% {
-      background-position: 0 0;
-   }
-    25% {
-      background-position: 50% 0;
-   }
-    50% {
-      background-position: 90% 0;
-   }
-    60% {
-      background-position: 60%;
-   }
-    75% {
-      background-position: 40%;
-   }
-    100% {
-      background-position: 0 0;
-   }
- }
-  
+ } */
   .form {
     position: fixed;
     top: 50%;
@@ -163,11 +116,9 @@ body,
     width: 500px;
     max-width: 80%;
   }
-  
   .form.active {
     transform: translate(-50%, -50%) scale(1);
   }
-  
   .form-header {
     padding: 10px 15px;
     display: flex;
@@ -175,12 +126,10 @@ body,
     align-items: center;
     border-bottom: 1px solid black;
   }
-  
   .form-header .title {
     font-size: 1.25rem;
     font-weight: bold;
   }
-  
   .form-header .close-button {
     cursor: pointer;
     border: none;
@@ -189,62 +138,111 @@ body,
     font-size: 1.25rem;
     font-weight: bold;
   }
-  
   .form-section {
     padding: 10px 15px;
   }
-  
-  #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
-
+/* #textArea {
+  background: url(images/notebook.png) repeat-y;
+  width: 600px;
+  height: 300px;
+  font: normal 14px verdana;
+  line-height: 25px;
+  padding: 2px 10px;
+  border: solid 1px #ddd;
+} */
 #logo {
+  /* align-items: center;
+   */
    margin: auto;
   display: block;
   width: 10%;
   height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  /* color: #06D85F; */
+  margin: 80px 0;
+}
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+.buttonn {
+  font-size: 1em;
+  /* padding: 10px; */
+  color: #fff;
+  /* border: 2px solid #06D85F; */
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.buttonn:hover {
+  background: #06D85F;
+}
+.over {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.over:target {
+  visibility: visible;
+  opacity: 1;
+}
+.pop {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.pop h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.pop .closed {
+  position: absolute;
+  /* top: 20px; */
+  right: 30px;
+  transition: all 100ms;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.pop .closed:hover {
+  color: #094D6F;
+}
+.pop .content {
+  max-height: 30%;
+  overflow: auto;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 /* zen */
-/* 
+/*
         #zen {
           position: fixed;
           bottom: 5%;
@@ -253,15 +251,12 @@ body,
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
           Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
           font-weight: bold;
-       
-  
   max-width: 600px;
   border: 20px;
   border-style: solid;
   border-width: 50px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
-
   width: 340px;
   padding: 15px 10px;
   border: 3px solid #2E94E3;
@@ -269,17 +264,14 @@ body,
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
   transition: 0.5s;
         }
-
         #zen:hover {
-          background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
+          background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
           background-size: 600%;
           animation-duration: 20s;
           animation-iteration-count: infinite;
           animation-name: gradients;
         } */
-
 /* zen end */
-
 /* brain dump popup box */
 .popup{
   background-color: rgba(0,0,0,0.5);
@@ -300,7 +292,7 @@ body,
   margin:  0 0 20px auto;
   background-color: transparent;
   font-size: 30px;
-  color: #c5c5c5;
+  color: #C5C5C5;
   border: none;
   outline: none;
   cursor: pointer;
@@ -317,16 +309,12 @@ a{
   position: relative;
   margin: 10px auto;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 5px 0;
 }
-/* brain dump popup box end*/ 
-
-
-
-
-/* envelope -------------------->*/ 
+/* brain dump popup box end*/
+/* envelope -------------------->*/
 .letter-image {
 position: absolute;
 top: 50%;
@@ -353,7 +341,7 @@ width: 0;
 height: 0;
 border-style: solid;
 border-width: 0 0 100px 200px;
-border-color: transparent transparent #e95f55 transparent;
+border-color: transparent transparent #E95F55 transparent;
 z-index: 2;
 }
 .mail .top-fold {
@@ -369,7 +357,7 @@ border-width: 50px 100px 0 100px;
 -moz-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
 transform-origin: 50% 0%;
 transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
-border-color: #cf4a43 transparent transparent transparent;
+border-color: #CF4A43 transparent transparent transparent;
 z-index: 2;
 }
 .mail .back-fold {
@@ -377,7 +365,7 @@ position: absolute;
 bottom: 0;
 width: 200px;
 height: 100px;
-background: #cf4a43;
+background: #CF4A43;
 z-index: 0;
 }
 .mail .left-fold {
@@ -387,7 +375,7 @@ width: 0;
 height: 0;
 border-style: solid;
 border-width: 50px 0 50px 100px;
-border-color: transparent transparent transparent #e15349;
+border-color: transparent transparent transparent #E15349;
 z-index: 2;
 }
 .mail .letter {
@@ -406,21 +394,21 @@ transition: 0.4s 0.2s;
 .mail .letter .letter-border {
 height: 10px;
 width: 100%;
-background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 8px, transparent 8px, transparent 18px);
+background: repeating-linear-gradient(-45deg, #CB5A5E, #CB5A5E 8px, transparent 8px, transparent 18px);
 }
 .mail .letter .letter-title {
 margin-top: 10px;
 margin-left: 5px;
 height: 10px;
 width: 40%;
-background: #cb5a5e;
+background: #CB5A5E;
 }
 .mail .letter .letter-context {
 margin-top: 10px;
 margin-left: 5px;
 height: 10px;
 width: 20%;
-background: #cb5a5e;
+background: #CB5A5E;
 }
 .mail .letter .letter-stamp {
 margin-top: 30px;
@@ -428,7 +416,7 @@ margin-left: 120px;
 border-radius: 100%;
 height: 30px;
 width: 30px;
-background: #cb5a5e;
+background: #CB5A5E;
 opacity: 0.3;
 }
 .shadow {
@@ -466,8 +454,4 @@ height: 180px;
 .letter-image:hover .shadow {
 width: 250px;
 }
-
-
-/* envelope -------------------->*/ 
-
-
+/* envelope -------------------->*/
