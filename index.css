@@ -48,10 +48,6 @@ body,
   pointer-events: all;
 }
 /* clock start ----------------->*/
-<<<<<<< HEAD
-=======
-
->>>>>>> c4e5fc4c86879b6956ab1950d118e0e915eac578
 #thisTime {
   position: absolute;
   right: 0;
@@ -82,23 +78,13 @@ body,
     font-size: 1.6rem;
   }
 }
-<<<<<<< HEAD
 #thisTime:hover {
   background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
-=======
-
-#thisTime:hover {
-  background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
->>>>>>> c4e5fc4c86879b6956ab1950d118e0e915eac578
   background-size: 600%;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-name: gradients;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> c4e5fc4c86879b6956ab1950d118e0e915eac578
 #displayTime {
   font-size: 15px;
   font-weight: 600;
