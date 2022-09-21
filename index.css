@@ -6,7 +6,6 @@
 
 body,
 .wrapper {
-  
   background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
   background-size: 600%;
   animation-duration: 20s;
@@ -212,26 +211,7 @@ body,
     pointer-events: all;
   }
 
-
-
-
-
-
-
-/* #textArea {
-  background: url(images/notebook.png) repeat-y;
-  width: 600px;
-  height: 300px;
-  font: normal 14px verdana;
-  line-height: 25px;
-  padding: 2px 10px;
-  border: solid 1px #ddd;
-
-} */
-
 #logo {
-  /* align-items: center;
-   */
    margin: auto;
   display: block;
   width: 10%;

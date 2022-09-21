@@ -13,94 +13,78 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<img id="logo"src="images/logo.png">
+<img id="logo" src="images/logo.png">
 
-<body class="wrapper" >
-    <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-    <pre id="content" style="white-space: pre-wrap;"></pre>
-  
-      <div class="card card-4">
-        <h1 class="date">
-            <p id="intromessage">Connect via Gmail</p>
-            <p class="date-num" id="date-num"></p>
-            <p class="date-day" id="date-day"></p>
-        </h1>
-        <div class="card__icon"><i class="fas fa-bolt"></i></div>
-        <p class="card__exit"><i class="fas fa-times"></i></p>
-        <h2 class="title" id="eventsummary"></h2>
-          <p class="time" id="time"></p>
-          <p class="card__apply">
-          <button id="authorize_button" onclick="handleAuthClick()">Authorize your account</button>
-          <a id="cardinnertext"class="card__link" href="#">
-            <i class="fas fa-arrow-right"></i></a>
-        </p>
-      </div>
-      <div id= "rightcard"class="card card-5">
-        <div class="card__icon">
-          <img id= "weathericon"src="">
-        </div>
-        <h2 id="temperature"></h2>
-        <h2 id="forecast"></h2>
-        <p class="card__apply">
-        </p>
-      </div>
+<body id="columns" class="wrapper">
+  <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+  <pre id="content" style="white-space: pre-wrap;"></pre>
+
+  <div id="topcard" class="card card-4">
+    <h1 class="date">
+      <p id="intromessage">Sync your Calendar</p>
+      <p class="date-num" id="date-num"></p>
+      <p class="date-day" id="date-day"></p>
+    </h1>
+    <div class="card__icon"><i class="fas fa-bolt"></i></div>
+    <p class="card__exit"><i class="fas fa-times"></i></p>
+    <h2 class="title" id="eventsummary"></h2>
+    <p class="time" id="time"></p>
+    <p class="card__apply">
+      <button id="authorize_button" onclick="handleAuthClick()">Authorize your account</button>
+      <a id="cardinnertext" class="card__link" href="#">
+        <i class="fas fa-arrow-right"></i></a>
+    </p>
+  </div>
+  <div id="rightcard" class="card card-5">
+    <div class="card__icon">
+      <img id="weathericon" src="">
+    </div>
+    <h2 id="temperature"></h2>
+    <h2 id="forecast"></h2>
+    <p class="card__apply">
+    </p>
+  </div>
 
 
   <!-- Ashé's Code -->
   <section class="wrapper" onload="initClock()">
     <div class="popup">
-        <button data-form-target="#form">
-            <div class="letter-image">
-              <div class="mail">
-                <div class="back-fold"></div>
-                <div class="letter">
-                  <div class="letter-border"></div>
-                  <div class="letter-title"></div>
-                  <p>What are you feeling?</p>
-                  <div class="letter-context"></div>
-                  <div class="letter-stamp">
-                    <div class="letter-stamp-inner"></div>
-                  </div>
-                </div>
-                <div class="top-fold"></div>
-                <div class="body"></div>
-                <div class="left-fold"></div>
+      <button data-form-target="#form">
+        <div class="letter-image">
+          <div class="mail">
+            <div class="back-fold"></div>
+            <div class="letter">
+              <div class="letter-border"></div>
+              <div class="letter-title"></div>
+              <p>What are you feeling?</p>
+              <div class="letter-context"></div>
+              <div class="letter-stamp">
+                <div class="letter-stamp-inner"></div>
               </div>
-              <div class="shadow"></div>
             </div>
-          </button>
-        <a id="close" href="#">Skip</a>
+            <div class="top-fold"></div>
+            <div class="body"></div>
+            <div class="left-fold"></div>
+          </div>
+          <div class="shadow"></div>
+        </div>
+      </button>
+      <a id="close" href="#">Skip</a>
     </div>
     <div id="overlay"></div>
-    </section>
-
- 
-<!-- digital clock start -->
-<div id="clock">
-  <h1 id="date-time"></h1>
-</div>
-<!-- end clock -->
+  </section>
 
 
-
-<!-- Ashé's Code ends here -->
+  <!-- digital clock start -->
+  <div id="clock">
+    <h1 id="date-time"></h1>
+  </div>
+  <!-- end clock -->
 
 
 
-
-<div class="zenMode">
-  <p id="zen">Feeling Down?</p>
-</div>
-    
-    
-
-    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
-    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
-    <script src="js/calendar.js"></script>
-    <script type = "module" src ="index.js"></script>
-    <script type = "module" src="weather.js"></script>
-
-  <div class="card card-3">
+  <!-- Ashé's Code ends here -->
+  <div id="bottomcard"class="card card-3">
     <div class="card__icon"><i class="fas fa-bolt"></i></div>
     <p class="card__exit"><i class="fas fa-times"></i></p>
     <h1>Things To-Do</h1>
@@ -115,6 +99,9 @@
     </p>
   </div>
 
+  <div class="zenMode">
+    <p id="zen">Feeling Down?</p>
+  </div>
 
   <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
   <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
