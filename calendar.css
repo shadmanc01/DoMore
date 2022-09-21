@@ -95,44 +95,6 @@ body {
   background: var(--calBgColor);
 }
 
-.start-10 {
-  grid-row-start: 2;
-}
-
-.start-12 {
-  grid-row-start: 4;
-}
-
-.start-1 {
-  grid-row-start: 5;
-}
-
-.start-2 {
-  grid-row-start: 6;
-}
-
-.end-12 {
-  grid-row-end: 4;
-}
-
-.end-1 {
-  grid-row-end: 5;
-}
-
-.end-3 {
-  grid-row-end: 7;
-}
-
-.end-4 {
-  grid-row-end: 8;
-}
-
-.end-5 {
-  grid-row-end: 9;
-}
-
-
-
 .title {
   font-weight: 600;
   margin-bottom: 0.25rem;
@@ -331,4 +293,8 @@ body {
 .zen {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#rightcard {
+  margin-left: 60%;
 }
