@@ -601,3 +601,8 @@ section {
       opacity: 0;
     }
   } 
+
+  #logo {
+    width: 120%;
+    height: auto;
+  }
