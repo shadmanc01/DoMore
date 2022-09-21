@@ -47,6 +47,7 @@
 
 
   <!-- Ashé's Code -->
+  
   <section class="wrap" onload="initClock()">
     <div class="popup">
         <button data-form-target="#form">
@@ -85,9 +86,49 @@
     </div>
  
 <!-- digital clock start -->
-<div id="clock">
-  <h1 id="date-time"></h1>
+<script>
+  function show(format) {
+    var time = new Date();
+    var str = "";
+
+    if (format === "New_York") {
+        str += "New York " + time.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit" }) + "<br>";
+        // str += "Paris " + time.toLocaleTimeString("en-US", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" }) + "<br>";
+        // str += "Tokyo " + time.toLocaleTimeString("en-US", { timeZone: "Asia/Tokyo", hour: "2-digit", minute: "2-digit" });
+    }
+    else if (format === "Paris") {
+        // str += "New York " + time.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit" }) + "<br>";
+        str += "Paris " + time.toLocaleTimeString("en-US", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" }) + "<br>";
+        // str += "Tokyo " + time.toLocaleTimeString("en-US", { timeZone: "Asia/Tokyo", hour: "2-digit", minute: "2-digit" });
+    }
+    else if (format === "Tokyo") {
+        // str += "New York " + time.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit" }) + "<br>";
+        // str += "Paris " + time.toLocaleTimeString("en-US", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" }) + "<br>";
+        str += "Tokyo " + time.toLocaleTimeString("en-US", { timeZone: "Asia/Tokyo", hour: "2-digit", minute: "2-digit" });
+    }
+    // else {
+    //     str += "London " + time.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour12: false, hour: "2-digit", minute: "2-digit" }) + "<br>";
+    //     str += "Paris " + time.toLocaleTimeString("en-US", { timeZone: "Europe/Paris", hour12: false, hour: "2-digit", minute: "2-digit" }) + "<br>";
+    //     str += "Tokyo " + time.toLocaleTimeString("en-US", { timeZone: "Asia/Tokyo", hour12: false, hour: "2-digit", minute: "2-digit" });
+    // }
+
+    document.getElementById("displayTime").innerHTML = str;
+}
+
+window.onload = function() { show("New_York") };
+</script>
+<div id="thisTime">
+<p>Time :
+    <select name="select" id="select" onchange="show(this.value)">
+        <option value="New_York">New York</option>
+        <option value="Paris">Paris</option>
+        <option value="Tokyo">Tokyo</option>
+    </select>
+</p>
+<div id="displayTime"></div>
 </div>
+
+
 <!-- end clock -->
 
 

@@ -62,7 +62,7 @@ body,
 
 /* clock start ----------------->*/
 
-#clock {
+#thisTime {
   position: absolute;
   right: 0;
   top: 0;
@@ -95,7 +95,7 @@ body,
   }
 }
 
-#clock:hover {
+#thisTime:hover {
   background-image: linear-gradient(to right, #054f7d, #00a7cf, #861a54, #054f7d);
   background-size: 600%;
   animation-duration: 20s;
@@ -103,7 +103,7 @@ body,
   animation-name: gradients;
 }
 
-#date-time {
+#displayTime {
   font-size: 15px;
   font-weight: 600;
   text-align: center;
