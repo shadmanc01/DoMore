@@ -1,57 +1,33 @@
-var listElement = document.querySelector("#app ul");
-var inputElement = document.querySelector("#app input");
-var buttonElement = document.querySelector("#app button");
-
-var todos = JSON.parse(localStorage.getItem("list_todos")) || [];
-
-function renderTodos() {
-  listElement.innerHTML = "";
-
-  for (todos of todos) {
-    var todoElement = document.createElement("li");
-    var todoText = document.createTextNode(todos);
-
-    var linkElement = document.createElement("a");
-
-    linkElement.setAttribute("href", "#");
-
-    var pos = todos.indexOf(todo);
-    linkElement.setAttribute("onclick", "deleteTodo(" + pos + ")");
-
-    var linkText = document.createTextNode("done");
-
-    linkElement.appendChild(linkText);
-
-    todoElement.appendChild(todoText);
-    todoElement.appendChild(linkElement);
-    listElement.appendChild(todoElement);
-  }
-}
-
-renderTodos();
-
-function addTodo() {
-  var todoText = inputElement.value;
-
-  todos.push(todoText);
-  inputElement.value = "";
-  renderTodos();
-  saveToStorage();
-}
-
-buttonElement.onclick = addTodo;
-
-function deleteTodo(pos) {
-  todos.splice(pos, 1);
-  renderTodos();
-  saveToStorage();
-}
-
-function saveToStorage() {
-  localStorage.setItem("list_todos", JSON.stringify(todos));
-}
-
-
-
-
-
+(function(){
+  
+    var list = document.querySelector('#list'),
+        form = document.querySelector('form'),
+        item = document.querySelector('#item');
+    
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      list.innerHTML += '<ol>' + item.value + '</ol>';
+      store();
+      item.value = "";
+    },false)
+    
+    list.addEventListener('click',function(e){
+      var t = e.target;
+      if(t.classList.contains('checked')){
+        t.parentNode.removeChild(t);
+      } else {
+        t.classList.add('checked');
+      }
+      store();
+    },false)
+    
+    function store() {
+      window.localStorage.myitems = list.innerHTML;
+    }
+    
+    function getValues() {
+      var storedValues = window.localStorage.myitems;
+        list.innerHTML = storedValues;      
+    }
+    getValues();
+  })();
