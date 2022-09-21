@@ -343,3 +343,8 @@ body {
   padding: 2px 10px;
   border: solid 1px #ddd;
 }
+
+#logo {
+  width: 10%;
+  height: auto;
+}
