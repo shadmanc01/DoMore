@@ -8,15 +8,15 @@ let gisInited = false;
 let curDay = new Date().getDate();
 let setDate = document.getElementById("date-num");
 let curWDay = new Date().getDay();
-if(curWDay === 0) curWDay = 'Sunday'
-if(curWDay === 1) curWDay = 'Monday'
-if(curWDay === 2) curWDay = 'Tuesday'
-if(curWDay === 3) curWDay = 'Wednesday'
-if(curWDay === 4) curWDay = 'Thursday'
-if(curWDay === 5) curWDay = 'Friday'
-if(curWDay === 6) curWDay = 'Saturday'
+if (curWDay === 0) curWDay = 'Sunday'
+if (curWDay === 1) curWDay = 'Monday'
+if (curWDay === 2) curWDay = 'Tuesday'
+if (curWDay === 3) curWDay = 'Wednesday'
+if (curWDay === 4) curWDay = 'Thursday'
+if (curWDay === 5) curWDay = 'Friday'
+if (curWDay === 6) curWDay = 'Saturday'
 let setWDay = document.getElementById("date-day");
-let cardplan = document.getElementById('cardinnertext') 
+let cardplan = document.getElementById('cardinnertext')
 let intromessage = document.getElementById('intromessage')
 
 document.getElementById('authorize_button').style.visibility = 'hidden';
@@ -42,7 +42,7 @@ function gisLoaded() {
     tokenClient = google.accounts.oauth2.initTokenClient({
         client_id: CLIENT_ID,
         scope: SCOPES,
-        callback: '', 
+        callback: '',
     });
     gisInited = true;
     maybeEnableButtons();
