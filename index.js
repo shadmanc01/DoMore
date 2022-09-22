@@ -89,15 +89,13 @@ function closeModal(modal) {
     });
     
 // Brain Dump  end------------------->
+$ = function(id) {
+  return document.getElementById('dumpFeelings');
+}
 
-
-// $ = function(id) {
-//   return document.getElementById('popup1');
-// }
-
-// var show = function(id) {
-// 	$(id).style.display ='block';
-// }
-// var hide = function(id) {
-// 	$(id).style.display ='none';
-// }
+var show = function(id) {
+	$(id).style.display ='block';
+}
+var hide = function(id) {
+	$(id).style.display ='none';
+}
