@@ -20,8 +20,6 @@ let cardplan = document.getElementById('cardinnertext')
 let intromessage = document.getElementById('intromessage')
 
 document.getElementById('authorize_button').style.visibility = 'hidden';
-document.getElementById('signout_button').style.visibility = 'hidden';
-
 
 function gapiLoaded() {
     gapi.load('client', intializeGapiClient);
@@ -61,7 +59,6 @@ function handleAuthClick() {
         if (resp.error !== undefined) {
             throw (resp);
         }
-        document.getElementById('signout_button').style.visibility = 'visible';
         document.getElementById('authorize_button').style.visibility = 'hidden';
         // document.getElementById('authorize_button').innerText = 'Refresh';
         await listUpcomingEvents();
@@ -70,17 +67,6 @@ function handleAuthClick() {
         tokenClient.requestAccessToken({ prompt: 'consent' });
     } else {
         tokenClient.requestAccessToken({ prompt: '' });
-    }
-}
-
-function handleSignoutClick() {
-    const token = gapi.client.getToken();
-    if (token !== null) {
-        google.accounts.oauth2.revoke(token.access_token);
-        gapi.client.setToken('');
-        document.getElementById('content').innerText = '';
-        document.getElementById('authorize_button').innerText = 'Authorize';
-        document.getElementById('signout_button').style.visibility = 'hidden';
     }
 }
 
@@ -118,4 +104,5 @@ async function listUpcomingEvents() {
     cardplan.innerText = 'Join Meeting'
     cardplan.href = events[0].hangoutLink;
     intromessage.innerText = '';
+    console.log(events);
 }
