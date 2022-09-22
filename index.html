@@ -126,61 +126,7 @@ dateLabel.textContent = `${month} ${date}, ${year}`
         }
   </script>
  
-  <style>
-    /* calendar */
-    #txt1{ 
-      list-style: none;
-      resize: both;
-        position:  absolute;
-        left: 0px;
-        bottom: 200px;/* set these so Chrome doesn't return 'auto' from getComputedStyle */
-        width: 200px; 
-     
-        border-radius: 4px; padding: 8px;
-    }
-    /* todolist */
-    #txt2{ 
-      list-style: none;
-      resize: both;
-        position:  absolute;
-        right: 400px;
-        bottom: 200px; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
-        width: 200px; 
-      
-        border-radius: 4px; padding: 8px;
-    }
-    /* time */
-    #txt3{ 
-
-      list-style: none;
-      /* resize: both; */
-        position:  absolute;
-        left: 200px;
-        top: 0;
-         /* set these so Chrome doesn't return 'auto' from getComputedStyle */
-        width: 200px; 
-        border-radius: 4px; padding: 8px;
-    }
-/* todolist */
-    #txt4{ 
-      list-style: none;
-        position:  absolute;
-        left: 200px;
-        bottom: 0;
-         /* set these so Chrome doesn't return 'auto' from getComputedStyle */
-        width: 200px; 
-        border-radius: 4px; padding: 8px;
-    }
-    #txt5{ 
-      list-style: none;
-        position:  absolute;
-        left: 200px;
-        bottom: 0;
-         /* set these so Chrome doesn't return 'auto' from getComputedStyle */
-        width: 200px; 
-        border-radius: 4px; padding: 8px;
-    }
-    </style>
+  
   <body ondragover="drag_over(event)" ondrop="drop(event)">
    <ul>
           <li id="txt1" draggable="true" ondragstart="drag_start(event)">     
@@ -233,7 +179,7 @@ dateLabel.textContent = `${month} ${date}, ${year}`
             <li id="txt4" draggable="true" ondragstart="drag_start(event)"> 
               <section>
                 <header >
-                  <h1>Works to be done</h1>
+                  <h3>Things To Do</h3>
                   <form action="#">
                     <input
                       type="text"
@@ -456,6 +402,10 @@ form .fa-plus {
               </div>
             </li>
   </ul>
+
+  <li id="txt5" draggable="true" ondragstart="drag_start(event)"> 
+    
+  </li>
 
 
   

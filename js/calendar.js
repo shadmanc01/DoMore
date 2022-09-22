@@ -119,3 +119,5 @@ async function listUpcomingEvents() {
     cardplan.href = events[0].hangoutLink;
     intromessage.innerText = '';
 }
+
+
