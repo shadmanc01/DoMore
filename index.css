@@ -510,4 +510,25 @@ a {
   width: 250px;
 }
 
+/* css for todo list */
+form {
+  text-align: center;
+}
+
+.checked {
+  color:green;
+    &:before {
+      content: "\2713";
+      padding: 10px 10px;
+      font-size: 20px;
+    }
+    &:hover {
+      text-decoration: none;
+      &:after {
+        content: "(remove)";
+        color: tomato;
+        text-align: right;
+      }
+    }
+  }
 /* envelope -------------------->*/

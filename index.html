@@ -116,11 +116,8 @@ window.onload = function() { show("New_York") };
 </div>
 <!-- end clock -->
 <!-- Ashé's Code ends here -->
-<div class="zenMode">
-  <p id="zen">Feeling Down?</p>
-</div>
 <!-- Things to do -->
-  <div class="card card-3">
+  <div id= "bottomcard"class="card card-3">
     <div class="card__icon"><i class="fas fa-bolt"></i></div>
     <p class="card__exit"><i class="fas fa-times"></i></p>
     <h1>Things To-Do</h1>
@@ -133,6 +130,9 @@ window.onload = function() { show("New_York") };
     </p>
   </div>
   <!-- end of to do list -->
+  <div class="zenMode">
+    <p id="zen">Feeling Down?</p>
+  </div>
   <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
   <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
   <script src="js/calendar.js"></script>
