@@ -1,8 +1,8 @@
 (function(){
   
-    var list = document.querySelector('#list'),
-        form = document.querySelector('form'),
-        item = document.querySelector('#item');
+    let list = document.querySelector('#list');
+    let form = document.querySelector('form');
+    let item = document.querySelector('#item');
     
     form.addEventListener('submit',function(e){
       e.preventDefault();
