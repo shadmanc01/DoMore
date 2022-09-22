@@ -87,7 +87,7 @@ function closeModal(modal) {
 
 
 $ = function(id) {
-  return document.getElementById('popup1');
+  return document.getElementById('dumpFeelings');
 }
 
 var show = function(id) {

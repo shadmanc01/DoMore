@@ -53,12 +53,10 @@ body,
   right: 0;
   top: 0;
   max-width: 600px;
-  /* border: 20px; */
   border-style: solid;
   border-width: 5px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
-  /* font-family: "Segoe UI", sans-serif; */
   width: 340px;
   padding: 15px 10px;
   border: 3px solid #2E94E3;
@@ -91,18 +89,7 @@ body,
   text-align: center;
   letter-spacing: 3px;
 }
-/* clock end -----------------> */
-/* brain dump start ----------------->*/
-/* *, *::after, *::before {
-    box-sizing: border-box;
-  } */
- /* section,.wrap {
-    background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
-    background-size: 600%;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-name: gradients;
- } */
+
   .form {
     position: fixed;
     top: 50%;
@@ -141,18 +128,8 @@ body,
   .form-section {
     padding: 10px 15px;
   }
-/* #textArea {
-  background: url(images/notebook.png) repeat-y;
-  width: 600px;
-  height: 300px;
-  font: normal 14px verdana;
-  line-height: 25px;
-  padding: 2px 10px;
-  border: solid 1px #ddd;
-} */
+
 #logo {
-  /* align-items: center;
-   */
    margin: auto;
   display: block;
   width: 10%;
@@ -161,7 +138,6 @@ body,
 h1 {
   text-align: center;
   font-family: Tahoma, Arial, sans-serif;
-  /* color: #06D85F; */
   margin: 80px 0;
 }
 .box {
@@ -176,9 +152,7 @@ h1 {
 }
 .buttonn {
   font-size: 1em;
-  /* padding: 10px; */
   color: #fff;
-  /* border: 2px solid #06D85F; */
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
@@ -218,7 +192,6 @@ h1 {
 }
 .pop .closed {
   position: absolute;
-  /* top: 20px; */
   right: 30px;
   transition: all 100ms;
   font-size: 10px;
@@ -241,38 +214,7 @@ h1 {
     width: 70%;
   }
 }
-/* zen */
-/*
-        #zen {
-          position: fixed;
-          bottom: 5%;
-          right: 5%;
-          font-size: 20px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-          font-weight: bold;
-  max-width: 600px;
-  border: 20px;
-  border-style: solid;
-  border-width: 50px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  width: 340px;
-  padding: 15px 10px;
-  border: 3px solid #2E94E3;
-  border-radius: 5px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-  transition: 0.5s;
-        }
-        #zen:hover {
-          background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
-          background-size: 600%;
-          animation-duration: 20s;
-          animation-iteration-count: infinite;
-          animation-name: gradients;
-        } */
-/* zen end */
-/* brain dump popup box */
+
 .popup{
   background-color: rgba(0,0,0,0.5);
   width: 450px;
