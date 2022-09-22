@@ -12,11 +12,6 @@ body {
     align-items: center;
     text-align: center;
   }
-  #less{
-    margin-left: 50px;
-    align-items: center;
-    text-align: center;
-  }
   .text {
     opacity: 0;
     position: absolute;

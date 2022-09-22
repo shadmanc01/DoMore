@@ -87,6 +87,8 @@ function closeModal(modal) {
     document.querySelector("#close").addEventListener("click", function(){
         document.querySelector(".popup").style.display = "none";
     });
+
+
     
 // Brain Dump  end------------------->
 
@@ -101,3 +103,4 @@ var show = function(id) {
 var hide = function(id) {
 	$(id).style.display ='none';
 }
+
