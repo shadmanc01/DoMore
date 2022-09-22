@@ -35,6 +35,7 @@ const placeHolder2 = "Still Feeling Down?"
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+let closebutton = document.querySelector('closed')
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -49,6 +50,10 @@ overlay.addEventListener('click', () => {
     closeModal(modal)
   })
 })
+
+// closebutton.addEventListener('click', () => {
+//   document.querySelector(".popup").style.display = "none"
+// })
 
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
