@@ -105,8 +105,8 @@ body,
   letter-spacing: 3px;
 }
 
-<<<<<<< HEAD
-  .form {
+
+   .form {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -146,20 +146,20 @@ body,
   }
 
 #logo {
-   margin: auto;
-=======
+   margin: auto; 
+}
 /* clock end -----------------> */
 /* brain dump start ----------------->*/
-/* *, *::after, *::before {
+ *, *::after, *::before {
     box-sizing: border-box;
   } */
-/* section,.wrap {
+section,.wrap {
     background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
     background-size: 600%;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-name: gradients;
- } */
+ } 
 .form {
   position: fixed;
   top: 50%;
@@ -214,10 +214,7 @@ body,
   border: solid 1px #ddd;
 } */
 #logo {
-  /* align-items: center;
-   */
   margin: auto;
->>>>>>> 5c2661d26434a069865a595a71d8a67f2cdf8519
   display: block;
   width: 10%;
   height: auto;
@@ -315,45 +312,14 @@ h1 {
   }
 }
 
-<<<<<<< HEAD
-.popup{
+
+/* .popup{
   background-color: rgba(0,0,0,0.5);
-=======
-/* zen */
-/*
-        #zen {
-          position: fixed;
-          bottom: 5%;
-          right: 5%;
-          font-size: 20px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-          font-weight: bold;
-  max-width: 600px;
-  border: 20px;
-  border-style: solid;
-  border-width: 50px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  width: 340px;
-  padding: 15px 10px;
-  border: 3px solid #2E94E3;
-  border-radius: 5px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-  transition: 0.5s;
-        }
-        #zen:hover {
-          background-image: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
-          background-size: 600%;
-          animation-duration: 20s;
-          animation-iteration-count: infinite;
-          animation-name: gradients;
-        } */
-/* zen end */
+} */
+
 /* brain dump popup box */
 .popup {
   background-color: rgba(0, 0, 0, 0.5);
->>>>>>> 5c2661d26434a069865a595a71d8a67f2cdf8519
   width: 450px;
   height: 500px;
   padding: 30px 40px;
