@@ -106,3 +106,5 @@ async function listUpcomingEvents() {
     intromessage.innerText = '';
     console.log(events);
 }
+
+

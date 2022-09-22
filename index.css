@@ -539,3 +539,68 @@ a {
 }
 
 
+
+    /* calendar */
+    #txt1{ 
+      list-style: none;
+      resize: both;
+        position:  absolute;
+        left: -10px;
+        top: -10px;/* set these so Chrome doesn't return 'auto' from getComputedStyle */
+        width: 200px; 
+     
+        border-radius: 4px; padding: 8px;
+    }
+    /* Weather */
+    #txt2{ 
+      list-style: none;
+      resize: both;
+        position:  absolute;
+        left: -10px;
+        bottom: 60px; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+        width: 200px; 
+      
+        border-radius: 4px; padding: 8px;
+    }
+    /* time */
+    #txt3{ 
+      list-style: none;
+        position:  absolute;
+        right: 10px;
+        top: 20px;
+         /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+        width: 200px; 
+        border-radius: 4px; padding: 8px;
+    }
+/* todolist */
+    #txt4{ 
+      list-style: none;
+        position:  absolute;
+        right: 245px;
+        top: 200px;
+         /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+        width: 200px; 
+        border-radius: 4px; padding: 8px;
+    }
+    /* motivation  */
+    #txt5{ 
+      list-style: none;
+        position:  absolute;
+        left: 10px;
+        bottom: 10px;
+         /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+        width: 200px; 
+        border-radius: 4px; padding: 8px;
+    }
+
+    #txt6{ 
+      list-style: none;
+        position:  absolute;
+        right: 10px;
+        bottom: 100px;
+         /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+        width: 200px; 
+        border-radius: 4px; padding: 8px;
+    }
+    
+    
