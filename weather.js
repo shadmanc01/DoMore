@@ -12,7 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
 				.then(resp => resp.json())
 				.then(data => {
 					let kelvin = data.main.temp;
-					let curforecast = data.weather[0].main.toLowerCase();
+					let curforecast = data.weather[0].main;
+					if(curforecast == 'Clouds') curforecast = 'Cloudy'
 					console.log(curforecast)
 					let fahr = Math.round((((kelvin - 273.15) * 9) / 5) + 32)
 					weathericon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
