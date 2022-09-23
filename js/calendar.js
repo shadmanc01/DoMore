@@ -18,6 +18,7 @@ if (curWDay === 6) curWDay = 'Saturday'
 let setWDay = document.getElementById("date-day");
 let cardplan = document.getElementById('cardinnertext')
 let intromessage = document.getElementById('intromessage')
+let eventdescrip = document.getElementById('eventdescrip')
 
 document.getElementById('authorize_button').style.visibility = 'hidden';
 
@@ -92,9 +93,9 @@ async function listUpcomingEvents() {
         document.getElementById('content').innerText = 'No events found.';
         return;
     }
-    document.getElementById('content').innerText = '';
+    eventdescrip.innerText = `Event Description: ${events[0].description}`;
     document.getElementById('eventsummary').innerText = events[0].summary;
-    let startTime = new Date(events[0].originalStartTime.dateTime);
+    let startTime = new Date(events[0].start.dateTime);
     let endTime = new Date(events[0].end.dateTime);
     document.getElementById('time').innerText = `${startTime.toLocaleTimeString('en-US')} - ${endTime.toLocaleTimeString('en-US')}`;
     setDate.innerText = curDay;
@@ -103,8 +104,8 @@ async function listUpcomingEvents() {
     console.log(events);
     cardplan.innerText = 'Join Meeting'
     cardplan.href = events[0].hangoutLink;
-    intromessage.innerText = '';
-    console.log(events);
+    // intromessage.innerText = '';
+    // console.log(events);
 }
 
 
