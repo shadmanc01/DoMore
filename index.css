@@ -576,7 +576,7 @@ a {
     #txt4{ 
       list-style: none;
         position:  absolute;
-        right: 245px;
+        right: 400px;
         top: 200px;
          /* set these so Chrome doesn't return 'auto' from getComputedStyle */
         width: 200px; 
@@ -603,4 +603,14 @@ a {
         border-radius: 4px; padding: 8px;
     }
     
+    
+
+
+
+
+
+
+
+
+
     

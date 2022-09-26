@@ -104,3 +104,22 @@ var hide = function(id) {
 	$(id).style.display ='none';
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
