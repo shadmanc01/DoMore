@@ -186,14 +186,16 @@ h1 {
   text-align: center;
 } */
 
-/* .buttonn {
+.buttonn {
+  position: absolute;
+  top: 20px;
   font-size: 1em;
   color: rgb(16, 9, 9);
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
-} */
+}
 
 .buttonn:hover {
   background: linear-gradient(to right, #054F7D, #00A7CF, #861A54, #054F7D);
@@ -238,7 +240,7 @@ h1 {
 
 .pop .closed {
   position: absolute;
-  right: 30px;
+  left: 150px;
   transition: all 100ms;
   font-size: 10px;
   font-weight: bold;

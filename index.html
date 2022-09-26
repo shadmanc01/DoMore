@@ -101,17 +101,19 @@
         </button>
       </div></div>
     </div> 
-
+   
     <div id="moveable6">
       <div id="moveable6header"><section class="wrap" onload="initClock()">
+      
         <div class="popup">
+          
                 <div class="letter-image">
                   <div class="mail">
                     <div class="back-fold"></div>
                     <div class="letter">
                       <div class="letter-border"></div>
-                      <div class="letter-title"></div>
-                      <h6><a class="buttonn" href="#dumpFeelings">How are you feeling?</a></h6>
+                      <div class="letter-title">  <h6><a class="buttonn" href="#dumpFeelings">How are you feeling?</a></h6></div>
+                      
                       <div class="letter-context"></div>
                       <div class="letter-stamp">
                         <div class="letter-stamp-inner"></div>
@@ -125,6 +127,7 @@
                 </div>
               
             <a id="close" href="#">Skip</a>
+            
         </div>
         <div id="overlay"></div>
         </section>
@@ -847,91 +850,6 @@ ul {
 /* body {
   background: linear-gradient(135deg, #c3a3f1, #6414e9);
 } */
-#container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-#draggable-elem {
-  cursor: pointer;
-  background-color: #ffffff;
-  font-size: 1.6em;
-  width: 7em;
-  height: 7em;
-  padding: 1em;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 0.3em;
-  cursor: move;
-  display: grid;
-  place-items: center;
-  font-family: "Poppins", sans-serif;
-  color: #231041;
-  text-align: center;
-  font-weight: 500;
-  z-index: 2;
-}
-
-#container1 {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-#draggable-elem2 {
-  cursor: pointer;
-  background-color: #ffffff;
-  font-size: 1.6em;
-  width: 7em;
-  height: 7em;
-  padding: 1em;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 0.3em;
-  cursor: move;
-  display: grid;
-  place-items: center;
-  font-family: "Poppins", sans-serif;
-  color: #231041;
-  text-align: center;
-  font-weight: 500;
-  z-index: 2;
-}
-a {
-  color: #ffffff;
-  display: block;
-  width: 20em;
-  padding: 0.7em 0;
-  text-align: center;
-  background-color: #231041;
-  font-family: "Poppins", sans-serif;
-  border-radius: 0.3em;
-  text-decoration: none;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 2em;
-  z-index: 1;
-}
-.fab {
-  color: #ff0000;
-}
-@media screen and (max-width: 500px) {
-  #draggable-elem {
-    font-size: 14px;
-  }
-}
-
-
-
-
-
-
-
 
 
 #text {
@@ -942,11 +860,6 @@ a {
   text-align: center;
 }
 
-/* h2{
-  color: #fff;
-  font-size: 47px;
-  line-height: 40px;
-} */
 
 a{
   color: #808080;
@@ -972,11 +885,8 @@ a:hover{
 #moveable1 {
     position: absolute;
     z-index: 9;
-    /* position:  absolute; */
         left: -10px;
         top: -10px;
-    /* background-color: #000; */
-    /* border: 1px solid #fff; */
     color: #fff;
     padding: 20px;
     
@@ -987,8 +897,7 @@ a:hover{
     z-index: 9;
     left: -10px;
         bottom: 60px;
-    /* background-color: #000; */
-    /* border: 1px solid #fff; */
+    
     color: #fff;
     padding: 20px;
     
@@ -999,9 +908,6 @@ a:hover{
     z-index: 9;
     right: 10px;
         top: 20px;
-    /* background-color: #000; */
-    /* border: 1px solid #fff; */
-    /* color: #fff; */
     padding: 20px;
     
 }
@@ -1011,9 +917,6 @@ a:hover{
     z-index: 9;
     right: 10px;
         top: 200px;
-    /* background-color: #000; */
-    /* border: 1px solid #fff; */
-    /* color: #fff; */
     padding: 20px;
     
 }
@@ -1022,8 +925,6 @@ a:hover{
     z-index: 9;
     left: 10px;
         bottom: 10px;
-    /* background-color: #000; */
-    /* border: 1px solid #fff; */
     color: #fff;
     padding: 20px;
     
@@ -1031,21 +932,15 @@ a:hover{
 #moveable6{
   position: absolute;
     z-index: 9;
-    /* left: 10px;
-        bottom: 10px; */
-    /* background-color: #000; */
-    /* border: 1px solid #fff; */
-    /* color: #fff; */
     padding: 20px;
     
 }
 
 #moveable1header  {
-    /* padding: 10px; */
+
     cursor: move;
     z-index: 10;
-    /* background-color: #fff; */
-    /* color: #000; */
+
 }
 
 #moveable2header{
