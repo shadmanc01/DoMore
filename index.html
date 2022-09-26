@@ -336,7 +336,7 @@ function header() {
 
 function listSection() {
   let storage = JSON.parse(localStorage.getItem("todolist"));
-  // if there is no item in localstorage, initialize new object array
+  
   storage = storage ? storage : [];
 
   let list = document.getElementById("list");
@@ -489,19 +489,19 @@ window.onload = () => {
       {
         id: 'Rb5B80r8jj',
         resolved: false,
-        title: 'Morning Jog in the City Park',
+        title: 'Make breakfast',
         createdAt: defaultDate,
       },
       {
         id: 'eV4B60r5Fc',
         resolved: false,
-        title: 'Open Codepen and Get Inspired',
+        title: 'Do Yoga',
         createdAt: defaultDate,
       },
       {
         id: 'pY2v99r0Ff',
         resolved: true,
-        title: 'Completing the Project',
+        title: 'Code Code Code!',
         createdAt: defaultDate,
       },
     ];
