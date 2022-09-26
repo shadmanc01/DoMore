@@ -7,4 +7,4 @@ using Javascript, CSS, HTML, Bootstrap with supplemental applications such as Fi
 Users of DoMore can easily navigate through the application with all of the functionalities being on a single page
 similar to a homescreen with widgets. DoMore prioritizes productivity and well being through providing a quick glance 
 at the users day through fetching their events from their Google Calendar along with displaying the current
-weather for planning your day further.
+weather for planning your day further. If you wanna stay the same 'Do', if you want to grow 'DoMore'.
